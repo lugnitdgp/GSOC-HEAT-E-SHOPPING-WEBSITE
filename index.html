@@ -1,224 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DressMe</title>
-        <link rel="stylesheet" href="style.css"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DressMe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
 <body>
-    <div class="header">
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html"><img src="logo.png" width="125px"></a>
-            </div>
-            <nav>
-                <ul id="menuitems">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="products details.html">PRODUCT</a></li>
-                    <li><a href="">ACCOUNT</a></li>
-                    <li><a href="">CONTACT</a></li>
+    <div  class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="products details.html">PRODUCT</a></li>
+                        <li><a href="">ACCOUNT</a></li>
+                        <li><a href="">CONTACT</a></li>
                     </ul>
-                    </nav>
-                    <img src="cart.jpg" width="30px" height="30px">
-                     <img src="menu.webp" class="menu" onclick="menutoggle()">
-        </div>
-        <div class="row">
-            <div class="col2">
-                <h1>Fashion is like eating, you shouldn't stick to the same menu!<br> 
-                </h1>
-                <p>Fashion has to reflect who you are, so what are you waiting for??</p>
-                <a href="" class="btn">Explore</a>
+                </nav>
+                <img src="cart.jpg" width="30px" height="30px">
+                <img src="menu.webp" class="menu" id="hamburger" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col2">
+                    <h1>Fashion is like eating, you shouldn't stick to the same menu!<br>
+                    </h1>
+                    <p>Fashion has to reflect who you are, so what are you waiting for??</p>
+                    <a href="" class="btn">Explore</a>
+
+                </div>
 
             </div>
-            <div class="col2">
-                <img src="background.jpg" alt="">
+            <div class="categories">
+                <div class="small-container">
+                    <div class="row">
+                        <div class="col1"><img src="background1.jfif"></div>
+                        <div class="col1"> <img src="background3.jfif "></div>
+                        <div class="col1"><img src="bg3.jpg"></div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </div>
-</div>
-<div class="categories">
-    <div class="small-container">
-        <div class="row">
-        <div class="col1"><img src="background1.jfif" ></div>
-        <div class="col1"> <img src="background3.jfif "></div>
-        <div class="col1"><img src="bg3.jpg"></div>
-    </div>
-</div>
-    
-</div>
-<!--------featured products-------->
-<div class="small-container">
-    <h2 class="title">Featured Products</h2>
-    <div class="row">
- <div class="col3">
-         <a href="products details.html"><img src="shirt.jpg"></a>
-                <h4>Classy Shirt</h4>
-            <div class="rating">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-            </div>
-            <p>Rs.1000</p>
-    </div>
-    <div class="col3">
-        <img src="gown.jpg">
-               <h4>Pink Gown</h4>
-           <div class="rating">
-               <i class="fa fa-star" aria-hidden="true"></i>
-               <i class="fa fa-star" aria-hidden="true"></i>
-               <i class="fa fa-star" aria-hidden="true"></i>
-               <i class="fa fa-star" aria-hidden="true"></i>
-               <i class="fa fa-star-o" aria-hidden="true"></i>
-           </div>
-           <p>Rs.5000</p>
-   </div>
-   <div class="col3">
-    <img src="hot pant.jpg">
-           <h4>Denim Short Pants</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.1500</p>
-</div>
-<div class="col3">
-    <img src="onepeice.jpg">
-           <h4>Black Dress</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<h2 class="title">More Products</h2>
-<div class="row">
-    <div class="col3">
-            <img src="heelsa.jfif">
-                   <h4>Pink heels</h4>
-               <div class="rating">
-                   <i class="fa fa-star" aria-hidden="true"></i>
-                   <i class="fa fa-star" aria-hidden="true"></i>
-                   <i class="fa fa-star" aria-hidden="true"></i>
-                   <i class="fa fa-star" aria-hidden="true"></i>
-                   <i class="fa fa-star-o" aria-hidden="true"></i>
-               </div>
-               <p>Rs.1000</p>
-       </div>
-       <div class="col3">
-           <img src="jeansjacket.jpg">
-                  <h4>Denim Jackets</h4>
-              <div class="rating">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-              </div>
-              <p>Rs.5000</p>
-      </div>
-      <div class="col3">
-       <img src="pinkpant.webp">
-              <h4>Classy Pink Pants</h4>
-          <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-          </div>
-          <p>Rs.1500</p>
-   </div>
-   <div class="col3">
-       <img src="bellbottom1r.jpg">
-              <h4>Bell Bottom Jeans</h4>
-          <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-          </div>
-          <p>Rs.3000</p>
-   </div><div class="col3">
-    <img src="blackshirtr.jpg">
-           <h4>Black Dress</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<div class="col3">
-    <img src="stilletosr.jpg">
-           <h4>Black Heels</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<div class="col3">
-    <img src="croptopright.jpeg">
-           <h4>Crop Top</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<div class="col3">
-    <img src="blackjeans.webp">
-           <h4>Black Jeans</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<div class="footer">
-<hr>
-<p class="Copyright">Copyright 2021 - RuchikaShaw</p>
-</hr>
-</div>
-<!-----js for toggle menu------->
-<script>
-    var menuitems = document.getElementById("menuitems");
-    menuitems.style.maxHeight="0px";
-    function menutoggle(){
-        if(menuitems.style.maxHeight == "0px")
-        {
-            menuitems.style.maxHeight = "200px";
-        }
-        else{
-            menuitems.style.maxHeight = "0px";
-        }
-    }
-    
-    </script>
-    </body>
-    </html>
+            <!--------featured products-------->
+            <div class="small-container">
+                <p class="title">FEATURED PRODUCTS</p>
+                <div class="row">
+                    <div class="col3">
+                        <a href="products details.html"><img src="shirt.jpg"></a>
+                        <h4>Classy Shirt</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <p>Rs.1000</p>
+                    </div>
+                    <div class="col3">
+                        <img src="gown.jpg">
+                        <h4>Pink Gown</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <p>Rs.5000</p>
+                    </div>
+                    <div class="col3">
+                        <img src="hot pant.jpg">
+                        <h4>Denim Short Pants</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <p>Rs.1500</p>
+                    </div>
+                    <div class="col3">
+                        <img src="onepeice.jpg">
+                        <h4>Black Dress</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <p>Rs.3000</p>
+                    </div>
+                    <h2 class="title">MORE PRODUCTS</h2>
+                    <div class="row">
+                        <div class="col3">
+                            <img src="heelsa.jfif">
+                            <h4>Pink heels</h4>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>Rs.1000</p>
+                        </div>
+                        <div class="col3">
+                            <img src="jeansjacket.jpg">
+                            <h4>Denim Jackets</h4>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>Rs.5000</p>
+                        </div>
+                        <div class="col3">
+                            <img src="pinkpant.webp">
+                            <h4>Classy Pink Pants</h4>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>Rs.1500</p>
+                        </div>
+                        <div class="col3">
+                            <img src="bellbottom1r.jpg">
+                            <h4>Bell Bottom Jeans</h4>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>Rs.3000</p>
+                        </div>
+                        <div class="col3">
+                            <img src="blackshirtr.jpg">
+                            <h4>Black Dress</h4>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>Rs.3000</p>
+                        </div>
+                        <div class="col3">
+                            <img src="stilletosr.jpg">
+                            <h4>Black Heels</h4>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>Rs.3000</p>
+                        </div>
+                        <div class="col3">
+                            <img src="croptopright.jpeg">
+                            <h4>Crop Top</h4>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>Rs.3000</p>
+                        </div>
+                        <div class="col3">
+                            <img src="blackjeans.webp">
+                            <h4>Black Jeans</h4>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>Rs.3000</p>
+                        </div>
+                        <div class="footer">
+                            <hr>
+                            <p class="Copyright">Copyright 2021 - RuchikaShaw</p>
+                            </hr>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-----js for toggle menu------->
+                <script>
+                    var menuitems = document.getElementById("menuitems");
+                    menuitems.style.maxHeight = "0px";
+                    function menutoggle() {
+                        if (menuitems.style.maxHeight == "0px") {
+                            menuitems.style.maxHeight = "200px";
+                        }
+                        else {
+                            menuitems.style.maxHeight = "0px";
+                        }
+                    }
+
+                </script>
+</body>
+
+</html>
