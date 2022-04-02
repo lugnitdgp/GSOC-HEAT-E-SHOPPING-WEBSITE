@@ -1,224 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DressMe</title>
-        <link rel="stylesheet" href="style.css"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-<body>
-    <div class="header">
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html"><img src="logo.png" width="125px"></a>
-            </div>
-            <nav>
-                <ul id="menuitems">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="products details.html">PRODUCT</a></li>
-                    <li><a href="">ACCOUNT</a></li>
-                    <li><a href="">CONTACT</a></li>
-                    </ul>
-                    </nav>
-                    <img src="cart.jpg" width="30px" height="30px">
-                     <img src="menu.webp" class="menu" onclick="menutoggle()">
-        </div>
-        <div class="row">
-            <div class="col2">
-                <h1>Fashion is like eating, you shouldn't stick to the same menu!<br> 
-                </h1>
-                <p>Fashion has to reflect who you are, so what are you waiting for??</p>
-                <a href="" class="btn">Explore</a>
 
-            </div>
-            <div class="col2">
-                <img src="background.jpg" alt="">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dress Me</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+    <!-- SIDENAV -->
+    <div class="d-flex flex-column d-lg-none pt-5" id="side_nav">
+        <a href="javascript:void(0)" class="display-6 position-absolute " onclick="close_sidenav()" style="right:5%;top: 1%;width: fit-content;">
+            <i class="fa fa-close pl-5"></i></a>
+            <a class="px-3 py-2 mr-4 mt-2" href="index.html">HOME</a>
+            <a class="px-3 py-2 mr-4 mt-2" href="products details.html">PRODUCT</a>
+            <a class="px-3 py-2 mr-4 mt-2" href="">ACCOUNT</a>
+            <a class="px-3 py-2 mr-4 mt-2" href="">CONTACT</a>
+            <a class="px-3 py-2 mr-4 mt-2" href="" > <i class="fa fa-cart-plus" aria-hidden="true"></i> CART</a>
+    </div>
+
+    <!-- LANDGING PAGE -->
+    <div class="container-fluid header pt-5">
+
+      <!-- NAVBAR FOR LARGE SCREEN -->
+        <div class="d-lg-none" id="nav_bar_small" style="margin: 0 -4%;">
+            <!-- <a href="" class="mx-4"> <img src="logo.jpg" style="height: 4.5em;"></a> -->
+            <a href="javascript:void(0)" class="h1 text-white" onclick="open_sidenav()"><i
+                class="fa fa-bars" aria-hidden="true" style=" margin: 6%;font-size: larger;"></i></a>
+            <a href="" class="mx-2"> <img src="logo.png" style="height: 5em;float: right; margin-right: 2%;"></a>
+        </div>
+        <!-- NAVIGATION BAR -->
+        <div class="nav_bar d-none d-lg-block" id="nav_bar">
+                <img src="logo.png" style="height: 110px; margin-left:15px;" >
+            <div class="navlinks">
+            <a class="px-3 py-2 mr-4 mt-2" href="index.html">HOME</a>
+            <a class="px-3 py-2 mr-4 mt-2" href="products details.html">PRODUCT</a>
+            <a class="px-3 py-2 mr-4 mt-2" href="">ACCOUNT</a>
+            <a class="px-3 py-2 mr-4 mt-2" href="">CONTACT</a>
+            <a class="px-3 py-2 mr-4 mt-2" href=""> <i class="fa fa-cart-plus" aria-hidden="true"></i> CART</a>
             </div>
         </div>
-    </div>
-</div>
-<div class="categories">
-    <div class="small-container">
-        <div class="row">
-        <div class="col1"><img src="background1.jfif" ></div>
-        <div class="col1"> <img src="background3.jfif "></div>
-        <div class="col1"><img src="bg3.jpg"></div>
-    </div>
-</div>
-    
-</div>
-<!--------featured products-------->
-<div class="small-container">
-    <h2 class="title">Featured Products</h2>
-    <div class="row">
- <div class="col3">
-         <a href="products details.html"><img src="shirt.jpg"></a>
-                <h4>Classy Shirt</h4>
-            <div class="rating">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+
+
+        <!-- TAGLINE -->
+        <div class="tagline mt-5 pt-5">
+            <div class="text-white display-3 py-3 my-5" style="font-family: 'Playfair Display', serif;">
+                Fashion is like eating, you shouldn't stick to the same menu!
             </div>
-            <p>Rs.1000</p>
+            <div class="text-white h4">
+                Fashion has to reflect who you are, so what are you waiting for??
+            </div>
+        </div>
+        <a class="btn btn-warning">EXPLORE</a>
     </div>
-    <div class="col3">
-        <img src="gown.jpg">
-               <h4>Pink Gown</h4>
-           <div class="rating">
-               <i class="fa fa-star" aria-hidden="true"></i>
-               <i class="fa fa-star" aria-hidden="true"></i>
-               <i class="fa fa-star" aria-hidden="true"></i>
-               <i class="fa fa-star" aria-hidden="true"></i>
-               <i class="fa fa-star-o" aria-hidden="true"></i>
-           </div>
-           <p>Rs.5000</p>
-   </div>
-   <div class="col3">
-    <img src="hot pant.jpg">
-           <h4>Denim Short Pants</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.1500</p>
-</div>
-<div class="col3">
-    <img src="onepeice.jpg">
-           <h4>Black Dress</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<h2 class="title">More Products</h2>
-<div class="row">
-    <div class="col3">
-            <img src="heelsa.jfif">
-                   <h4>Pink heels</h4>
-               <div class="rating">
+
+
+
+    <!-- CATEGORIES -->
+    <div class="display-5 text-center text-white py-3" style="background-color: black;font-family: 'BIZ UDPMincho', serif;">CATEGORIES</div>
+    <div class="categories d-flex flex-column flex-md-row flex-wrap justify-content-center py-5">
+        <div class="mx-3 my-5 text-center display-6"><img src="background1.jfif" style="width: 100%;height: 9cm;"><p>STYLE</p></div>
+        <div class="mx-3 my-5 text-center display-6"> <img src="background3.jfif " style="width: 100%;height: 9cm;"><p>ELEGENCE</p></div>
+        <div class="mx-3 my-5 text-center display-6"><img src="bg3.jpg" style="width: 100%;height: 9cm;"><p>TRENDING</p></div>
+    </div>
+
+
+
+
+    <!-- PRODUCTS -->
+    <!-- FEATURED PRODUCTS SECTION-->
+     <div class="display-5 text-center py-2 text-white" style="background-color: black;font-family: 'BIZ UDPMincho', serif;">OUR FEATURED PRODUCTS</div>
+     <div class="FeatPrdtList d-flex flex-column flex-md-row flex-wrap justify-content-center py-5">
+         <div class="mx-4 my-5 align-items-end" style="background-image:url(shirt.jpg);">
+            <p class="prdtText text-center text-white h4" >
+                <span>Classy Shirt</span> <br>
+                <span class="rating text-warning">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span> <br>
+                <span class="price">Rs. 999</span>
+            </p>
+        </div>
+        <div class="mx-4 my-5" style="background-image:url(gown.jpg);">
+            <p class="prdtText text-center text-white h4" >
+                <span>Gown</span> <br>
+                <span class="rating text-warning">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span> <br>
+                <span class="price">Rs. 4999</span>
+            </p>
+        </div>
+        <div class="mx-4 my-5" style="background-image:url(hot\ pant.jpg);">
+            <p class="prdtText text-center text-white h4" >
+                <span>Hot Pant</span> <br>
+                <span class="rating text-warning">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span> <br>
+                <span class="price">Rs. 1499</span>
+            </p>
+        </div>
+        <div class="mx-4 my-5" style="background-image:url(onepeice.jpg);">
+            <p class="prdtText text-center text-white h4" >
+                <span>One peice</span> <br>
+                <span class="rating text-warning">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span> <br>
+                <span class="price">Rs. 2999</span>
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <!-- MORE PRODUCTS SECTION-->
+    <div class="display-5 text-center py-2 text-white" style="background-color: black;font-family: 'BIZ UDPMincho', serif;">MORE  PRODUCTS</div>
+
+    <!-- FIRST ROW -->
+    <div class="MorePrdtList d-flex flex-column flex-md-row flex-wrap justify-content-center py-5">
+        <div class="mx-4 my-5" style="background-image:url(heelsa.jfif);">
+           <p class="prdtText text-center text-white h4" >
+               <span>Pink Heels</span> <br>
+               <span class="rating text-warning">
                    <i class="fa fa-star" aria-hidden="true"></i>
                    <i class="fa fa-star" aria-hidden="true"></i>
                    <i class="fa fa-star" aria-hidden="true"></i>
                    <i class="fa fa-star" aria-hidden="true"></i>
                    <i class="fa fa-star-o" aria-hidden="true"></i>
-               </div>
-               <p>Rs.1000</p>
+               </span> <br>
+               <span class="price">Rs. 1999</span>
+           </p>
        </div>
-       <div class="col3">
-           <img src="jeansjacket.jpg">
-                  <h4>Denim Jackets</h4>
-              <div class="rating">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-              </div>
-              <p>Rs.5000</p>
-      </div>
-      <div class="col3">
-       <img src="pinkpant.webp">
-              <h4>Classy Pink Pants</h4>
-          <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-          </div>
-          <p>Rs.1500</p>
+       <div class="mx-4 my-5" style="background-image:url(jeansjacket.jpg);">
+           <p class="prdtText text-center text-white h4" >
+               <span>Denim Jacket</span> <br>
+               <span class="rating text-warning">
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star-o" aria-hidden="true"></i>
+               </span> <br>
+               <span class="price">Rs. 4999</span>
+           </p>
+       </div>
+       <div class="mx-4 my-5" style="background-image:url(pinkpant.webp);">
+           <p class="prdtText text-center text-white h4" >
+               <span>Classy Pink Pants</span> <br>
+               <span class="rating text-warning">
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star-o" aria-hidden="true"></i>
+               </span> <br>
+               <span class="price">Rs. 1599</span>
+           </p>
+       </div>
+       <div class="mx-4 my-5" style="background-image:url(bellbottom1r.jpg);">
+           <p class="prdtText text-center text-white h4" >
+               <span>Bell Bottom Jeans</span> <br>
+               <span class="rating text-warning">
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star-o" aria-hidden="true"></i>
+               </span> <br>
+               <span class="price">Rs. 2999</span>
+           </p>
+       </div>
    </div>
-   <div class="col3">
-       <img src="bellbottom1r.jpg">
-              <h4>Bell Bottom Jeans</h4>
-          <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-          </div>
-          <p>Rs.3000</p>
-   </div><div class="col3">
-    <img src="blackshirtr.jpg">
-           <h4>Black Dress</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
+
+
+
+
+   <!-- SECOND ROW -->
+   <div class="MorePrdtList d-flex flex-column flex-md-row flex-wrap justify-content-center py-5">
+    <div class="mx-4 my-5" style="background-image:url(blackshirtr.jpg);">
+       <p class="prdtText text-center text-white h4" >
+           <span>Black Dress</span> <br>
+           <span class="rating text-warning">
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star-o" aria-hidden="true"></i>
+           </span> <br>
+           <span class="price">Rs. 2999</span>
+       </p>
+   </div>
+   <div class="mx-4 my-5" style="background-image:url(stilletosr.jpg);">
+       <p class="prdtText text-center text-white h4" >
+           <span>Black Heals</span> <br>
+           <span class="rating text-warning">
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star-o" aria-hidden="true"></i>
+           </span> <br>
+           <span class="price">Rs. 2999</span>
+       </p>
+   </div>
+   <div class="mx-4 my-5" style="background-image:url(croptopright.jpeg);">
+       <p class="prdtText text-center text-white h4" >
+           <span>Crop Top</span> <br>
+           <span class="rating text-warning">
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star-o" aria-hidden="true"></i>
+           </span> <br>
+           <span class="price">Rs. 2999</span>
+       </p>
+   </div>
+   <div class="mx-4 my-5" style="background-image:url(blackjeans.webp);">
+       <p class="prdtText text-center text-white h4" >
+           <span>Black Jeans</span> <br>
+           <span class="rating text-warning">
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star-o" aria-hidden="true"></i>
+           </span> <br>
+           <span class="price">Rs. 2999</span>
+       </p>
+   </div>
 </div>
-<div class="col3">
-    <img src="stilletosr.jpg">
-           <h4>Black Heels</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<div class="col3">
-    <img src="croptopright.jpeg">
-           <h4>Crop Top</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<div class="col3">
-    <img src="blackjeans.webp">
-           <h4>Black Jeans</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<div class="footer">
-<hr>
-<p class="Copyright">Copyright 2021 - RuchikaShaw</p>
-</hr>
-</div>
-<!-----js for toggle menu------->
-<script>
-    var menuitems = document.getElementById("menuitems");
-    menuitems.style.maxHeight="0px";
-    function menutoggle(){
-        if(menuitems.style.maxHeight == "0px")
-        {
-            menuitems.style.maxHeight = "200px";
-        }
-        else{
-            menuitems.style.maxHeight = "0px";
-        }
-    }
+
+
+
+
+<!-- COPYRIGHT SECTION -->
+<div class="copyright text-center py-5">
+        <span class="px-3 mx-2">Terms of service</span>
+        <span class="px-3 mx-2">Privacy Policy</span>
+        <span class="px-3 mx-2">Cookie Policy</span>
+        <span class="px-3 mx-2">Accessibility</span>
+        <span class="px-3 mx-2">Ads Info</span>
+        <span class="px-3 mx-2">More <i class="material-icons" >more_horiz</i></span>
+        <span class="px-3 mx-2">© 2022 DessMe, Inc.</span> <br> <br>
+        <span class="px-3 mx-2"> Developed by <strong style="color: black;">SOMEONE YOU KNOW</strong></span> <br>
+        <span class="px-3 mx-2">Version 9:1.04.2022</span>
     
-    </script>
-    </body>
-    </html>
+</div>
+</body>
+<script>
+    // SIDE EFFECT IN  SIDENAV
+
+function open_sidenav() {
+    document.getElementById("side_nav").style.width = "15em"; // MAKE WIDTH 15EM WHEN SIDENAV IS NEEDED 
+}
+
+function close_sidenav() {
+    document.getElementById("side_nav").style.width = "0"; //MAKE WIDTH 0 WHEN SIDENAV IS NOT NEEDED
+}
+
+</script>
+</html>
