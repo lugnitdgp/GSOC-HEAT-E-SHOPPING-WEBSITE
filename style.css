@@ -28,10 +28,10 @@ body{
     }
     a{
         text-decoration: none;
-        color: brown);
+        color: brown;
     }
     p{
-        color:brown);
+        color:brown;
     }
     .container{
         max-width: 1300px;
@@ -175,7 +175,7 @@ body{
         
         cursor: pointer;
     }
-    }
+    
     .single-product{
         margin-top: 80px;
     }
@@ -206,9 +206,9 @@ body{
         margin-right: 10px;
         border: 1px solid crimson;
     }
-    input: :focus{
+    /* input: :focus{
         outline: none;
-    }
+    } */
    /*---media query for less than 600 screen size---------*/
    @media only screen and (max-width: 600px){
        .row{
