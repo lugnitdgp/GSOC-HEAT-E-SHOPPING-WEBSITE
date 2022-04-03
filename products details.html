@@ -17,15 +17,18 @@
                 <img src="logo.png" width="125px">
             </div>
             <nav>
-                <ul id="menuitems">
+                <button class="hamburger" id="hamburger">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <ul id="nav-ul" class="nav-ul">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="products details.html">PRODUCT</a></li>
                     <li><a href="">ACCOUNT</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="contacts.html">CONTACT</a></li>
                     </ul>
                     </nav>
                     <img src="cart.jpg" width="30px" height="30px">
-                     <img src="menu.webp" class="menu" onclick="menutoggle()">
+                     <!-- <img src="menu.webp" class="menu" onclick="menutoggle()"> -->
         </div>
         <!---------single product details------------------>
         <div class="small-container single-product">
@@ -177,7 +180,14 @@
             menuitems.style.maxHeight = "0px";
         }
     }
-    
+    </script>
+    <script>
+        const hamburger=document.getElementById('hamburger');
+        const navUL=document.getElementById('nav-ul');
+        hamburger.addEventListener('click',()=>{
+            navUL.classList.toggle('show');
+        });
+
     </script>
     </body>
     </html>

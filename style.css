@@ -9,10 +9,22 @@ body{
 .header{
     background: radial-gradient(rgba(245, 245, 220, 0.575), beige)
 }
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: black;
+    font-size: 20px;
+    display: none;
+}
+.hamburger:focus{
+    outline:none;
+}
 .navbar{
     display: flex;
     align-items: center;
     padding: 20px;
+    cursor: pointer;
+    border-right: 20px;
     }
     nav{
         flex: 1;
@@ -26,12 +38,23 @@ body{
         display: inline-block;
         margin-right: 20px;
     }
+    nav ul li:hover{
+        /* display: inline-block;
+        margin-right: 20px; */
+        background: rgba(255, 0, 0, 0.938);
+        padding:5px;
+        transition:0.5s;
+        border-radius: 30px;
+    }
     a{
         text-decoration: none;
-        color: brown);
+        color: brown;
+    }
+    nav ul li a:hover{
+        color:black;
     }
     p{
-        color:brown);
+        color:brown;
     }
     .container{
         max-width: 1300px;
@@ -71,8 +94,6 @@ body{
         margin: 30px 0;
         border-radius: 30px;
         transition: 0.5s;
-
-
     }
     .btn:hover{
         background: rgba(255, 0, 0, 0.938);
@@ -82,10 +103,7 @@ body{
         margin-top: 70px;
     }
     .categories{
-    
         margin: 70px;
-        
-    
     }
     .col1{
         flex-basis: 30%;
@@ -114,6 +132,10 @@ body{
         padding: 10px;
 
     }
+    .col3 img:hover{
+        transform: scale(1.12);
+        transition: 0.5s;
+    }
     .title{
         text-align: center;
         margin: 0 auto 80px;
@@ -130,7 +152,8 @@ body{
         color: crimson;
     }
     .col3:hover{
-        transform: translateY(-5px);
+        /* transform: translateY(-5px); */
+        transform: scaleZ(2);
 
     }
     .footer hr{
@@ -150,32 +173,25 @@ body{
         
     }
     /*--------media query for menu -------*/
-    @media only screen and (max-width: 800px){
-
-        nav ul {
-            position: absolute;
-            top: 70px;
-            left: 0;
-            background: #333;
+    @media screen and (max-width:767px){
+        .nav-ul{
+            display: none;
             width: 100%;
-            overflow: hidden;
-            transition: max-height 0.5s;
+            flex-direction: column;
+            margin: 15px;
         }
-        nav ul li{
-            display: block;
-            margin-right: 50px;
-            margin-top: 10px;
-            margin-bottom: 10px;
+        .nav-ul.show{
+            display: flex;
         }
-        nav ul li a{
-            color:white
+        .hamburger{
+            display: inline-block;
         }
-        
-    }.menu-icon{
+    }
+    .menu-icon{ 
         
         cursor: pointer;
     }
-    }
+    
     .single-product{
         margin-top: 80px;
     }
@@ -206,7 +222,7 @@ body{
         margin-right: 10px;
         border: 1px solid crimson;
     }
-    input: :focus{
+    input :focus{
         outline: none;
     }
    /*---media query for less than 600 screen size---------*/
@@ -230,4 +246,93 @@ body{
        font-size: 26px;
        line-height: 32px;
    }
+   #preloader{
+       height: 100%;
+       width: 100%;
+       /* background: #000 url(circle-loader-gif-2.gif) no-repeat center center; */
+       background: rgb(256,256,256) url(loader.gif) no-repeat center center;
+       background-size: 35%;
+       position: fixed;
+       z-index:300;
+   }
+   .contr{
+    /* background-color: rgb(218, 233, 228); */
+    background-image: url(https://images.pexels.com/photos/8939307/pexels-photo-8939307.jpeg?cs=srgb&dl=pexels-nataliya-vaitkevich-8939307.jpg&fm=jpg);
+    display: flexbox;
+   }
+   .heading{
+    text-align: center;
+   }
+   .contr .heading h1{
+       color:rgb(66, 40, 6);
+   }
+   .contr .heading p{
+       color:red;
+       font-weight:bolder;
+   }
+   .ftr .cpr{
+       text-align: center;
+   }
+   .col6{
+       display: block;
+       justify-content: center;
+       align-items: center;
+   }
+   .sales{
+    height: 80vh;
+    width: 60vw;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6f8f9+0,535656+48,f5f7f9+100&0.71+0,1+100 */
+background: -moz-linear-gradient(-45deg,  rgba(246,248,249,0.71) 0%, rgba(83,86,86,0.85) 48%, rgba(245,247,249,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(246,248,249,0.71) 0%,rgba(83,86,86,0.85) 48%,rgba(245,247,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(246,248,249,0.71) 0%,rgba(83,86,86,0.85) 48%,rgba(245,247,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5f6f8f9', endColorstr='#f5f7f9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+-webkit-box-shadow: 10px 10px 15px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 15px -1px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 15px -1px rgba(0,0,0,0.75);
+    position: relative;
+    border-radius: 2.5%;
+    right: -20vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flexbox;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+} 
+.x{
+    position: relative;
+    top: 156px;
+
+}
+.phno{
+    color:rgb(34, 255, 255);
+}
+.customer{
+    height: 80vh;
+    width: 60vw;
+background: linear-gradient(to bottom,  rgba(59,103,158,0.71) 0%,rgba(43,136,217,0.82) 37%,rgba(32,124,202,0.89) 62%,rgba(125,185,232,1) 100%);
+-webkit-box-shadow: 10px 10px 15px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 15px -1px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 15px -1px rgba(0,0,0,0.75);
+    background:linear-gradient();
+    position: relative;
+    border-radius: 2.5%;
+    right: -20vw;
+    margin-bottom: 15px;
+    display: flexbox;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.y{
+    position: relative;
+    top: 156px;
+}
+.email{
+    color:rgb(231, 255, 16);
+}
+.email span{
+    color:rgb(11, 11, 190);
+    text-decoration: underline;
+}
    
