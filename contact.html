@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .container-fluid {
+            height: max-content;
+            background-image: none;
+        }
+
+        .header {
+            background-image: linear-gradient(to top, rgba(0, 0, 255, 0.294), rgba(0, 0, 255, 0.418)), url('customer.jpeg');
+            background-repeat: no-repeat;
+            background-position-y: bottom;
+            background-size: cover;
+            height: 60%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .container-fluid .features {
+            position: absolute;
+            top: 60%;
+            left: 0;
+            width: 100%;
+        }
+
+        .container-fluid .features div {
+            width: 25%;
+            height: max-content;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- SIDENAV -->
+    <div class="d-flex flex-column d-lg-none pt-5" id="side_nav">
+        <a href="javascript:void(0)" class="display-6 position-absolute " onclick="close_sidenav()"
+            style="right:5%;top: 1%;width: fit-content;">
+            <i class="fa fa-close pl-5"></i></a>
+        <a class="px-3 py-2 mr-4 mt-2" href="index.html">HOME</a>
+        <a class="px-3 py-2 mr-4 mt-2" href="products details.html">PRODUCT</a>
+        <a class="px-3 py-2 mr-4 mt-2" href="">ACCOUNT</a>
+        <a class="px-3 py-2 mr-4 mt-2" href="">CONTACT</a>
+        <a class="px-3 py-2 mr-4 mt-2" href=""> <i class="fa fa-cart-plus" aria-hidden="true"></i> CART</a>
+    </div>
+    <div class="container-fluid pt-5">
+        <div class="header pt-5">
+            <!-- NAVBAR FOR LARGE SCREEN -->
+            <div class="d-lg-none" id="nav_bar_small" style="margin: -27px -4%;">
+                <!-- <a href="" class="mx-4"> <img src="logo.jpg" style="height: 4.5em;"></a> -->
+                <a href="javascript:void(0)" class="h1 text-warning " onclick="open_sidenav()"><i class="fa fa-bars"
+                        aria-hidden="true" style=" margin: 6%;font-size: larger;"></i></a>
+                <a href="" class="mx-2"> <img src="logo.png" style="height: 5em;float: right; margin-right: 5%;"></a>
+            </div>
+            <!-- NAVIGATION BAR -->
+            <div class="nav_bar d-none d-lg-block" id="nav_bar">
+                <img src="logo.png" style="height: 110px; margin-left:15px;">
+                <div class="navlinks">
+                    <a class="px-3 py-2 mr-4 mt-2" href="index.html">HOME</a>
+                    <a class="px-3 py-2 mr-4 mt-2" href="products details.html">PRODUCT</a>
+                    <a class="px-3 py-2 mr-4 mt-2" href="">ACCOUNT</a>
+                    <a class="px-3 py-2 mr-4 mt-2" href="">CONTACT</a>
+                    <a class="px-3 py-2 mr-4 mt-2" href=""> <i class="fa fa-cart-plus" aria-hidden="true"></i> CART</a>
+                </div>
+            </div>
+
+            <div class="text-center text-white py-3 my-3">
+                <p class="h2 my-4">Have Any Doubts?</p>
+                <p class="display-2 my-3"> CONTACT US</p>
+                <p class="h4 my-3"> Our Team is Eager to help You 27/7 with anything you need</p>
+            </div>
+        </div>
+        <div class="features d-flex flex-column flex-md-row flex-wrap justify-content-center py-4">
+            <div class="mx-4">
+                <img src="contact.png" style="height: 4cm;margin-left: 30%;">
+                <p class="h3 text-center my-4">Customer Support</p>
+                <p class="text-center px-md-3">Having Problems using our service ? Our Customer Support Team is eager to
+                    help you with any service related question</p>
+                <a class="btn btn-primary" style="margin-left: 30%;"> Contact Us </a>
+            </div>
+            <div class="mx-4">
+                <img src="demo.png" style="height: 4cm;margin-left: 30%;">
+                <p class="h3 text-center my-4">Request a demo</p>
+                <p class="text-center px-md-3">Want to try out any opyion ? Request a Demo</p>
+                <a class="btn btn-primary" style="margin-left: 30%;"> Request a Demo </a>
+            </div>
+            <div class="mx-4">
+                <img src="sales.png" style="height: 4cm;margin-left: 30%;">
+                <p class="h3 text-center my-4">Sales Inquiry</p>
+                <p class="text-center px-md-3">Contact our sales Expert to all of your questions about purchasing</p>
+                <a class="btn btn-primary" style="margin-left: 30%;"> Sales Enquiry </a>
+            </div>
+
+        </div>
+        <!-- COPYRIGHT SECTION -->
+        <!-- <footer class="copyright  text-center py-5" style="position: absolute; bottom: 0;">
+            <span class="px-3 mx-2">Terms of service</span>
+            <span class="px-3 mx-2">Privacy Policy</span>
+            <span class="px-3 mx-2">Cookie Policy</span>
+            <span class="px-3 mx-2">Accessibility</span>
+            <span class="px-3 mx-2">Ads Info</span>
+            <span class="px-3 mx-2">More <i class="material-icons">more_horiz</i></span>
+            <span class="px-3 mx-2">© 2022 Twitter, Inc.</span> <br> <br>
+            <span class="px-3 mx-2"> Developed by <strong style="color: black;">SOMEONE YOU KNOW</strong></span> <br>
+            <span class="px-3 mx-2">Version 9:1.04.2022</span>
+        </footer> -->
+    </div>
+
+</div>
+</body>
+<script>
+    // SIDE EFFECT IN  SIDENAV
+
+    function open_sidenav() {
+        document.getElementById("side_nav").style.width = "15em"; // MAKE WIDTH 15EM WHEN SIDENAV IS NEEDED 
+    }
+
+    function close_sidenav() {
+        document.getElementById("side_nav").style.width = "0"; //MAKE WIDTH 0 WHEN SIDENAV IS NOT NEEDED
+    }
+
+</script>
+
+</html>
