@@ -3,40 +3,91 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Description" content="Enter your description here" />
         <title>All Products details--DressMe</title>
-        <link rel="stylesheet" href="style.css"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" async></script>
+
+<script src="../main.js" async></script>
+<link rel="stylesheet" href="../style.css">
+
+<link rel="icon" href="../icons/favicon.ico">
     </head>
 <body>
-    
+
+
+
+
+
+
+
+ <header>
+  <nav class="navbar navbar-expand-lg navigation-wrap">
     <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <img src="logo.png" width="125px">
-            </div>
-            <nav>
-                <ul id="menuitems">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="products details.html">PRODUCT</a></li>
-                    <li><a href="">ACCOUNT</a></li>
-                    <li><a href="">CONTACT</a></li>
-                    </ul>
-                    </nav>
-                    <img src="cart.jpg" width="30px" height="30px">
-                     <img src="menu.webp" class="menu" onclick="menutoggle()">
-        </div>
+      <a class="navbar-brand" href="#">
+        <img src="../icons/logo.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        <i class="fas fa-stream navbar-toggler-icon"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../home-page/index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="../product-page/products details.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../sign/signup.html">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contactinfo/contact.html">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+
+
+
+
+
         <!---------single product details------------------>
         <div class="small-container single-product">
-            <div class="row">
-                <div class="col-2">
-                    <img src="shirtnew.jpg" width="100%">
+          <center>
+
+
+            <div class="row row1">
+              <div class="col-md-12 col-sm-6 mb-12">
+                <div class="item-product">
+                  <h1>Classy Shirt by H&M</h1>
+                  <br>
+
+                    <img src="../product-page/shirt.jpg" class="unstage img-fluid"  >
+                    <br><br>
                 </div>
-                <div class="col-2">
-                    <p>Home / Shirt</p>
-                    <h1>Classy Shirt by H&M</h1>
-                    <h4>Rs.1000</h4>
+                </div>
+                <div class="col">
+
+
+                    <h4>Rs.3000</h4>
                     <select>
                         <option>Select Size</option>
                         <option>XS</option>
@@ -47,123 +98,492 @@
                         <option>XXL</option>
                         <input type="number" value="1">
                         <a href="" class="btn">ADD TO CART</a>
+                        <br><br>
                         <h2><b>PRODUCT DETAILS</b></h2>
-                        <br>
+
                         <p>Comfy and stylish Shirt by H&M, <br>pair it with denim pant or shorts according to your mood</p>
                     </select>
 
                 </div>
             </div>
+            </center>
         </div>
 
 
-    
-</div>
 
-              
-           
-<h2 class="title">More Products</h2>
-<div class="row">
-    <div class="col3">
-            <img src="heelsa.jfif">
-                   <h4>Pink heels</h4>
-               <div class="rating">
-                   <i class="fa fa-star" aria-hidden="true"></i>
-                   <i class="fa fa-star" aria-hidden="true"></i>
-                   <i class="fa fa-star" aria-hidden="true"></i>
-                   <i class="fa fa-star" aria-hidden="true"></i>
-                   <i class="fa fa-star-o" aria-hidden="true"></i>
-               </div>
-               <p>Rs.1000</p>
-       </div>
-       <div class="col3">
-           <img src="jeansjacket.jpg">
-                  <h4>Denim Jackets</h4>
-              <div class="rating">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
+
+
+
+
+        <section id="products" class="products">
+          <div class="wrapper">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 text-content text-center">
+                  <h2>MORE PRODUCTS</h2>
+                  <p>At risus viverra adipiscing at. Iaculis urna id volutpat lacus laoreet non curabitur. Enim lobortis
+                    scelerisque women dui faucibus in. Nisl suscipit adipiscing.</p>
+                    <br><br>
+                </div>
+                <center>
+
+
+                <div class="col-12">
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active"  role="tabpanel" >
+                      <div class="row">
+                        <div class="col-md-4 col-sm-6 mb-4">
+                          <div class="item-product">
+                            <a href="#" class="product-thumb-link">
+                              <img src="../product-page/bellbottom1.jpg" class="img-fluid stage">
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <div class="d-flex justify-content-between py-3">
+                              <a href="#" class="cat-parent">Women</a>
+                              <a href="#" class="wishlist">
+                                <i class="fa fa-heart"></i>
+                              </a>
+                            </div>
+                            <h4 class="product-title">
+                              <a href="#">BLUE JEANS</a>
+                            </h4>
+                            <div class="product-price">
+                              <ins><span class="money text-white">Rs.3000</span></ins>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between py-1">
+                              <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star unchecked"></span>
+                              </div>
+                              <div class="basket">
+                                <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                          <div class="item-product">
+                            <a href="#" class="product-thumb-link">
+                              <img src="../product-page/shirt.jpg" class="img-fluid stage">
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <div class="d-flex justify-content-between py-3">
+                              <a href="#" class="cat-parent">Women</a>
+                              <a href="#" class="wishlist">
+                                <i class="fa fa-heart"></i>
+                              </a>
+                            </div>
+                            <h4 class="product-title">
+                              <a href="#">Shirt by H&M</a>
+                            </h4>
+                            <div class="product-price">
+                              <ins><span class="money text-white">Rs.3000</span></ins>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between py-1">
+                              <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star unchecked"></span>
+                              </div>
+                              <div class="basket">
+                                <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                          <div class="item-product">
+                            <a href="#" class="product-thumb-link">
+                              <img src="../product-page/gown.jpg" class="img-fluid stage">
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <div class="d-flex justify-content-between py-3">
+                              <a href="#" class="cat-parent">Women</a>
+                              <a href="#" class="wishlist">
+                                <i class="fa fa-heart "></i>
+                              </a>
+                            </div>
+                            <h4 class="product-title">
+                              <a href="#">Pink Gown</a>
+                            </h4>
+                            <div class="product-price">
+                              <ins><span class="money text-white">Rs.3000</span></ins>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between py-1">
+                              <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                              </div>
+                              <div class="basket">
+                                <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                          <div class="item-product">
+                            <a href="#" class="product-thumb-link">
+                              <img src="../product-page/blackjeans.webp" class="img-fluid stage">
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <div class="d-flex justify-content-between py-3">
+                              <a href="#" class="cat-parent">Women</a>
+                              <a href="#" class="wishlist">
+                                <i class="fa fa-heart "></i>
+                              </a>
+                            </div>
+                            <h4 class="product-title">
+                              <a href="#">BLACK JEANS</a>
+                            </h4>
+                            <div class="product-price">
+                              <ins><span class="money text-white">Rs.3000</span></ins>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between py-1">
+                              <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                              </div>
+                              <div class="basket">
+                                <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                          <div class="item-product">
+                            <a href="#" class="product-thumb-link">
+                              <img src="../product-page/blackshirt.jpg" class="img-fluid stage">
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <div class="d-flex justify-content-between py-3">
+                              <a href="#" class="cat-parent">Women</a>
+                              <a href="#" class="wishlist">
+                                <i class="fa fa-heart "></i>
+                              </a>
+                            </div>
+                            <h4 class="product-title">
+                              <a href="#">BLACK TOP</a>
+                            </h4>
+                            <div class="product-price">
+                              <ins><span class="money text-white">Rs.3000</span></ins>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between py-1">
+                              <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                              </div>
+                              <div class="basket">
+                                <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                          <div class="item-product">
+                            <a href="#" class="product-thumb-link">
+                              <img src="../product-page/stilletosr.jpg" class="img-fluid stage">
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <div class="d-flex justify-content-between py-3">
+                              <a href="#" class="cat-parent">Women</a>
+                              <a href="#" class="wishlist">
+                                <i class="fa fa-heart "></i>
+                              </a>
+                            </div>
+                            <h4 class="product-title">
+                              <a href="#">BLACK HEELS</a>
+                            </h4>
+                            <div class="product-price">
+                              <ins><span class="money text-white">Rs.3000</span></ins>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between py-1">
+                              <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                              </div>
+                              <div class="basket">
+                                <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                          <div class="item-product">
+                            <a href="#" class="product-thumb-link">
+                              <img src="../product-page/croptopright.jpeg" class="img-fluid stage">
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <div class="d-flex justify-content-between py-3">
+                              <a href="#" class="cat-parent">Women</a>
+                              <a href="#" class="wishlist">
+                                <i class="fa fa-heart "></i>
+                              </a>
+                            </div>
+                            <h4 class="product-title">
+                              <a href="#">CROP TOP</a>
+                            </h4>
+                            <div class="product-price">
+                              <ins><span class="money text-white">Rs.3000</span></ins>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between py-1">
+                              <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                              </div>
+                              <div class="basket">
+                                <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                          <div class="item-product">
+                            <a href="#" class="product-thumb-link">
+                              <img src="../product-page/heelsred.jpg" class="img-fluid stage">
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <div class="d-flex justify-content-between py-3">
+                              <a href="#" class="cat-parent">Women</a>
+                              <a href="#" class="wishlist">
+                                <i class="fa fa-heart "></i>
+                              </a>
+                            </div>
+                            <h4 class="product-title">
+                              <a href="#">RED HEELS</a>
+                            </h4>
+                            <div class="product-price">
+                              <ins><span class="money text-white">Rs.3000</span></ins>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between py-1">
+                              <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                              </div>
+                              <div class="basket">
+                                <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                          <div class="item-product">
+                            <a href="#" class="product-thumb-link">
+                              <img src="../product-page/hot pant.jpg" class="img-fluid stage">
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <div class="d-flex justify-content-between py-3">
+                              <a href="#" class="cat-parent">Women</a>
+                              <a href="#" class="wishlist">
+                                <i class="fa fa-heart "></i>
+                              </a>
+                            </div>
+                            <h4 class="product-title">
+                              <a href="#">HOT PANT</a>
+                            </h4>
+                            <div class="product-price">
+                              <ins><span class="money text-white">Rs.3000</span></ins>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between py-1">
+                              <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                              </div>
+                              <div class="basket">
+                                <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                          <div class="item-product">
+                            <a href="#" class="product-thumb-link">
+                              <img src="../product-page/jeansjacket.jpg" class="img-fluid stage">
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <div class="d-flex justify-content-between py-3">
+                              <a href="#" class="cat-parent">Women</a>
+                              <a href="#" class="wishlist">
+                                <i class="fa fa-heart "></i>
+                              </a>
+                            </div>
+                            <h4 class="product-title">
+                              <a href="#">DENIM JACKET</a>
+                            </h4>
+                            <div class="product-price">
+                              <ins><span class="money text-white">Rs.3000</span></ins>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between py-1">
+                              <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                              </div>
+                              <div class="basket">
+                                <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                          <div class="item-product">
+                            <a href="#" class="product-thumb-link">
+                              <img src="../product-page/onepeice.jpg" class="img-fluid stage">
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <div class="d-flex justify-content-between py-3">
+                              <a href="#" class="cat-parent">Women</a>
+                              <a href="#" class="wishlist">
+                                <i class="fa fa-heart "></i>
+                              </a>
+                            </div>
+                            <h4 class="product-title">
+                              <a href="#">BLACK DRESS</a>
+                            </h4>
+                            <div class="product-price">
+                              <ins><span class="money text-white">Rs.3000</span></ins>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between py-1">
+                              <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                              </div>
+                              <div class="basket">
+                                <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                          <div class="item-product">
+                            <a href="#" class="product-thumb-link">
+                              <img src="../product-page/pinkpant.webp" class="img-fluid stage">
+                            </a>
+                          </div>
+                          <div class="product-info">
+                            <div class="d-flex justify-content-between py-3">
+                              <a href="#" class="cat-parent">Women</a>
+                              <a href="#" class="wishlist">
+                                <i class="fa fa-heart "></i>
+                              </a>
+                            </div>
+                            <h4 class="product-title">
+                              <a href="#">PINK PANT</a>
+                            </h4>
+                            <div class="product-price">
+                              <ins><span class="money text-white">Rs.3000</span></ins>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between py-1">
+                              <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                              </div>
+                              <div class="basket">
+                                <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  </center>
               </div>
-              <p>Rs.5000</p>
+
+
+                      </div>
+                    </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="footer py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-md-start text-center text-lg-start">
+          <div class="footer-logo text-muted mb-3 mb-md-0">
+            © 2022. ANKIT GUPTA. All rights reserved.
+          </div>
+        </div>
+        <div class="col-md-6 text-center text-lg-end">
+          <div class="footer-social pt-1">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+          </div>
+        </div>
       </div>
-      <div class="col3">
-       <img src="pinkpant.webp">
-              <h4>Classy Pink Pants</h4>
-          <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-          </div>
-          <p>Rs.1500</p>
-   </div>
-   <div class="col3">
-       <img src="bellbottom1r.jpg">
-              <h4>Bell Bottom Jeans</h4>
-          <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-          </div>
-          <p>Rs.3000</p>
-   </div><div class="col3">
-    <img src="blackshirtr.jpg">
-           <h4>Black Dress</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<div class="col3">
-    <img src="stilletosr.jpg">
-           <h4>Black Heels</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<div class="col3">
-    <img src="croptopright.jpeg">
-           <h4>Crop Top</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<div class="col3">
-    <img src="blackjeans.webp">
-           <h4>Black Jeans</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<div class="footer">
-<hr>
-<p class="Copyright">Copyright 2021 - RuchikaShaw</p>
-</hr>
-</div>
+    </div>
+  </div>
+</footer>
+
+
+
+
 <!-----js for toggle menu------->
 <script>
     var menuitems = document.getElementById("menuitems");
@@ -177,7 +597,72 @@
             menuitems.style.maxHeight = "0px";
         }
     }
-    
+
     </script>
+
+<script>
+    document.querySelectorAll(".stage")[0].addEventListener("click",function (){
+        document.querySelector(".unstage").setAttribute("src","../product-page/bellbottom1.jpg");
+
+
+    });
+    document.querySelectorAll(".stage")[1].addEventListener("click",function (){
+        document.querySelector(".unstage").setAttribute("src","../product-page/shirt.jpg");
+
+
+    });
+    document.querySelectorAll(".stage")[2].addEventListener("click",function (){
+        document.querySelector(".unstage").setAttribute("src","../product-page/gown.jpg");
+
+
+    });
+    document.querySelectorAll(".stage")[3].addEventListener("click",function (){
+        document.querySelector(".unstage").setAttribute("src","../product-page/blackjeans.webp");
+
+
+    });
+    document.querySelectorAll(".stage")[4].addEventListener("click",function (){
+        document.querySelector(".unstage").setAttribute("src","../product-page/blackshirt.jpg");
+
+
+    });
+    document.querySelectorAll(".stage")[5].addEventListener("click",function (){
+        document.querySelector(".unstage").setAttribute("src","../product-page/stilletosr.jpg");
+
+
+    });
+    document.querySelectorAll(".stage")[6].addEventListener("click",function (){
+        document.querySelector(".unstage").setAttribute("src","../product-page/croptopright.jpeg");
+
+
+    });
+    document.querySelectorAll(".stage")[7].addEventListener("click",function (){
+        document.querySelector(".unstage").setAttribute("src","../product-page/heelsred.jpg");
+
+
+    });
+    document.querySelectorAll(".stage")[8].addEventListener("click",function (){
+        document.querySelector(".unstage").setAttribute("src","../product-page/hot pant.jpg");
+
+
+    });
+    document.querySelectorAll(".stage")[9].addEventListener("click",function (){
+        document.querySelector(".unstage").setAttribute("src","../product-page/jeansjacket.jpg");
+
+
+    });
+    document.querySelectorAll(".stage")[10].addEventListener("click",function (){
+        document.querySelector(".unstage").setAttribute("src","../product-page/onepeice.jpg");
+
+
+    });
+    document.querySelectorAll(".stage")[11].addEventListener("click",function (){
+        document.querySelector(".unstage").setAttribute("src","../product-page/pinkpant.webp");
+
+
+    });
+
+</script>
+
     </body>
     </html>
