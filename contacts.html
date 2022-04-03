@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacts</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/031a568495.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="preloader"></div>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <button class="hamburger" id="hamburger">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <ul id="nav-ul" class="nav-ul">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products details.html">PRODUCT</a></li>
+                    <li><a href="">ACCOUNT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    </ul>
+                    </nav>
+                    <img src="cart.jpg" width="30px" height="30px">
+                     <!-- <img src="menu.webp" class="menu" onclick="menutoggle()"> -->
+        </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="contr">
+    <div class="heading">
+        <h1>Get in Touch</h1>
+    <p>Want to get in touch? We'd love to hear from you. Here's how you can reach us...</p>
+    </div>
+    <div class="col6">
+        <div class="sales">
+            <div class="x">
+                <i class="fa-solid fa-phone fa-3x"></i>
+            <br><br><br>
+            <h2>Talk to Sales</h2>
+            <br><br>
+            <p>Insterested in DressMe? Just pick up the phone to chat with a member of our sales team. </p>
+            <br>
+            <p class="phno">+353 1 512 4400</p>
+            </div>
+        </div>
+    <div class="customer">
+        <div class="y">
+            <i class="fa-solid fa-comments fa-3x"></i>
+            <br><br><br>
+            <h2>Contact Customer Support</h2>
+            <br><br>
+            <p>Sometimes you need a little help from your friends. Or a DressMe support rep. Don't worry... we're here for you.</p>
+            <p class="email">Contact us at <span>customer01care@dressme.com</span></p>
+        </div>
+    </div>
+    </div>
+</div>
+<hr>
+<div class="ftr">
+    <p class="cpr">Copyright &copy; Ruchika Shaw</p>
+</div>
+<!-----js for toggle menu------->
+<!-- <script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight="0px";
+    function menutoggle(){
+        if(menuitems.style.maxHeight == "0px")
+        {
+            menuitems.style.maxHeight = "200px";
+        }
+        else{
+            menuitems.style.maxHeight = "0px";
+        }
+    }
+    </script> -->
+    <script>
+        const hamburger=document.getElementById('hamburger');
+        const navUL=document.getElementById('nav-ul');
+        hamburger.addEventListener('click',()=>{
+            navUL.classList.toggle('show');
+        });
+    </script>
+
+    <script>
+        var loader=document.getElementById("preloader");
+        window.addEventListener("load",function(){
+            loader.style.display="none";
+        })
+    </script>
+    </body>
+    </html>
