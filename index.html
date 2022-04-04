@@ -1,224 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DressMe</title>
-        <link rel="stylesheet" href="style.css"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-<body>
-    <div class="header">
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html"><img src="logo.png" width="125px"></a>
-            </div>
-            <nav>
-                <ul id="menuitems">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="products details.html">PRODUCT</a></li>
-                    <li><a href="">ACCOUNT</a></li>
-                    <li><a href="">CONTACT</a></li>
-                    </ul>
-                    </nav>
-                    <img src="cart.jpg" width="30px" height="30px">
-                     <img src="menu.webp" class="menu" onclick="menutoggle()">
-        </div>
-        <div class="row">
-            <div class="col2">
-                <h1>Fashion is like eating, you shouldn't stick to the same menu!<br> 
-                </h1>
-                <p>Fashion has to reflect who you are, so what are you waiting for??</p>
-                <a href="" class="btn">Explore</a>
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladies Fashion Wear</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        body {
+            background-image: url('mainbackground.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt=""></a>
             </div>
-            <div class="col2">
-                <img src="background.jpg" alt="">
+            <ul>
+                <li><a href="index.html"><b>HOME</b></a></li>
+                <li><a href="about.html"><b>ABOUT</b></a></li>
+                <li><a href="contact.html"><b>CONTACT</b></a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name="" id="" placeholder="Search Here">
+                <button class="btn">Search</button>
+            </div>
+            <div class="cart">
+                <a href="cart.html"><img src="cart.png"></a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="frame">
+            <input type="radio" name="frame" id="frame1" checked />
+            <input type="radio" name="frame" id="frame2" />
+            <input type="radio" name="frame" id="frame3" />
+            <input type="radio" name="frame" id="frame4" />
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <div class="frame frame_1">
+                            <div class="frame-content">
+                                <!-- <h2>Slide 1></h2> -->
+                                <img src="img/background.jpg" width="1500px">
+                            </div>
+                        </div>
+                        <div class="frame frame_2">
+                            <div class="frame-content">
+                                <!-- <h2>Slide 2</h2> -->
+                                <img src="img/background 4.webp" width="1500px">
+                            </div>
+                        </div>
+                        <div class="frame frame_3">
+                            <div class="frame-content">
+                                <!-- <h2>Slide 3</h2> -->
+                                <img src="img/background5.jpg" width="1500px">
+                            </div>
+                        </div>
+                        <div class="frame frame_4">
+                            <div class="frame-content">
+                                <!-- <h2>Slide 4</h2> -->
+                                <img src="img/background6.jpg" width="1500px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="controls">
+                <label for="frame1"></label>
+                <label for="frame2"></label>
+                <label for="frame3"></label>
+                <label for="frame4"></label>
+            </div>
+            <div id="bullets">
+                <label for="frame1"></label>
+                <label for="frame2"></label>
+                <label for="frame3"></label>
+                <label for="frame4"></label>
             </div>
         </div>
-    </div>
-</div>
-<div class="categories">
-    <div class="small-container">
-        <div class="row">
-        <div class="col1"><img src="background1.jfif" ></div>
-        <div class="col1"> <img src="background3.jfif "></div>
-        <div class="col1"><img src="bg3.jpg"></div>
-    </div>
-</div>
-    
-</div>
-<!--------featured products-------->
-<div class="small-container">
-    <h2 class="title">Featured Products</h2>
-    <div class="row">
- <div class="col3">
-         <a href="products details.html"><img src="shirt.jpg"></a>
-                <h4>Classy Shirt</h4>
-            <div class="rating">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+
+        <div class="container">
+            <!-- <div class="slider">
+                <img src="img/background.jpg" alt="">
+            </div> -->
+
+            <div class="card">
+                <h2 class="my-2">Women western wear</h2>
+                <div class="cards">
+                    <div class="card-bar">
+                        <div class="card-item">
+                            <img src="img/jeansjacket.jpg" alt="" height="200px">
+                            <div class="lines">
+                                <p class="text-center my-1">JeansJacket</p>
+                                <p class="text-center my-1">Min <b>20%</b> off</p>
+                                <p class="text-center my-1"><b>Grab Now!</b></p>
+                            </div>
+                        </div>
+
+                        <div class="card-item">
+                            <img src="img/blackshirt.jpg" alt="" height="200px">
+                            <div class="lines">
+                                <p class="text-center my-1">Blackshirt</p>
+                                <p class="text-center my-1">Min <b>25%</b> off</p>
+                                <p class="text-center my-1"><b>Grab Now!</b></p>
+                            </div>
+                        </div>
+
+                        <div class="card-item">
+                            <img src="img/croptop.jpeg" alt="" height="200px">
+                            <div class="lines">
+                                <p class="text-center my-1">Top</p>
+                                <p class="text-center my-1">Min <b>10%</b> off</p>
+                                <p class="text-center my-1"><b>Grab Now!</b></p>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <img src="img/shirt.jpg" alt="" height="200px">
+                            <div class="lines">
+                                <p class="text-center my-1">Shirts</p>
+                                <p class="text-center my-1">Min <b>20%</b> off</p>
+                                <p class="text-center my-1"><b>Grab Now!</b></p>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <img src="img/onepeice.jpg" alt="" height="200px">
+                            <div class="lines">
+                                <p class="text-center my-1">Onepiece</p>
+                                <p class="text-center my-1">Min <b>25%</b> off</p>
+                                <p class="text-center my-1"><b>Grab Now!</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>Rs.1000</p>
-    </div>
-    <div class="col3">
-        <img src="gown.jpg">
-               <h4>Pink Gown</h4>
-           <div class="rating">
-               <i class="fa fa-star" aria-hidden="true"></i>
-               <i class="fa fa-star" aria-hidden="true"></i>
-               <i class="fa fa-star" aria-hidden="true"></i>
-               <i class="fa fa-star" aria-hidden="true"></i>
-               <i class="fa fa-star-o" aria-hidden="true"></i>
-           </div>
-           <p>Rs.5000</p>
-   </div>
-   <div class="col3">
-    <img src="hot pant.jpg">
-           <h4>Denim Short Pants</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.1500</p>
-</div>
-<div class="col3">
-    <img src="onepeice.jpg">
-           <h4>Black Dress</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<h2 class="title">More Products</h2>
-<div class="row">
-    <div class="col3">
-            <img src="heelsa.jfif">
-                   <h4>Pink heels</h4>
-               <div class="rating">
-                   <i class="fa fa-star" aria-hidden="true"></i>
-                   <i class="fa fa-star" aria-hidden="true"></i>
-                   <i class="fa fa-star" aria-hidden="true"></i>
-                   <i class="fa fa-star" aria-hidden="true"></i>
-                   <i class="fa fa-star-o" aria-hidden="true"></i>
-               </div>
-               <p>Rs.1000</p>
-       </div>
-       <div class="col3">
-           <img src="jeansjacket.jpg">
-                  <h4>Denim Jackets</h4>
-              <div class="rating">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-              </div>
-              <p>Rs.5000</p>
-      </div>
-      <div class="col3">
-       <img src="pinkpant.webp">
-              <h4>Classy Pink Pants</h4>
-          <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-          </div>
-          <p>Rs.1500</p>
-   </div>
-   <div class="col3">
-       <img src="bellbottom1r.jpg">
-              <h4>Bell Bottom Jeans</h4>
-          <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-          </div>
-          <p>Rs.3000</p>
-   </div><div class="col3">
-    <img src="blackshirtr.jpg">
-           <h4>Black Dress</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<div class="col3">
-    <img src="stilletosr.jpg">
-           <h4>Black Heels</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<div class="col3">
-    <img src="croptopright.jpeg">
-           <h4>Crop Top</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<div class="col3">
-    <img src="blackjeans.webp">
-           <h4>Black Jeans</h4>
-       <div class="rating">
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star-o" aria-hidden="true"></i>
-       </div>
-       <p>Rs.3000</p>
-</div>
-<div class="footer">
-<hr>
-<p class="Copyright">Copyright 2021 - RuchikaShaw</p>
-</hr>
-</div>
-<!-----js for toggle menu------->
-<script>
-    var menuitems = document.getElementById("menuitems");
-    menuitems.style.maxHeight="0px";
-    function menutoggle(){
-        if(menuitems.style.maxHeight == "0px")
-        {
-            menuitems.style.maxHeight = "200px";
-        }
-        else{
-            menuitems.style.maxHeight = "0px";
-        }
-    }
-    
-    </script>
-    </body>
-    </html>
+
+            <div class="card">
+                <h2 class="my-2">Ethnic bottom wear</h2>
+                <div class="cards">
+                    <div class="card-item">
+                        <img src="img/bellbottom1.jpg" alt="" width="150px" height="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">BellBottom</p>
+                            <p class="text-center my-1">Min <b>10%</b> off</p>
+                            <p class="text-center my-1"><b>Grab Now!</b></p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="img/blackjeans.webp" alt="" height="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Jeans</p>
+                            <p class="text-center my-1">Min <b>15%</b> off</p>
+                            <p class="text-center my-1"><b>Grab Now!</b></p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="img/hot pant.jpg" alt="" height="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Pants</p>
+                            <p class="text-center my-1">Min <b>10%</b> off</p>
+                            <p class="text-center my-1"><b>Grab Now!</b></p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="img/pinkpant.webp" alt="" height="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Pink Pant</p>
+                            <p class="text-center my-1">Min <b>20%</b> off</p>
+                            <p class="text-center my-1"><b>Grab Now!</b></p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="img/plazzo.jpg" alt="" height="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Plazzo</p>
+                            <p class="text-center my-1">Min <b>20%</b> off</p>
+                            <p class="text-center my-1"><b>Grab Now!</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="my-2">Footwear</h2>
+                <div class="cards">
+                    <div class="card-item">
+                        <img src="img/heels.jpg" alt="" height="200px" width="180">
+                        <div class="lines">
+                            <p class="text-center my-1">Sandal</p>
+                            <p class="text-center my-1">Min <b>20%</b> off</p>
+                            <p class="text-center my-1"><b>Grab Now!</b></p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="img/stilletos.jpg" alt="" height="200px" width="170">
+                        <div class="lines">
+                            <p class="text-center my-1">Stilletos</p>
+                            <p class="text-center my-1">Min <b>25%</b> off</p>
+                            <p class="text-center my-1"><b>Grab Now!</b></p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="img/shoes.jpeg" alt="" height="200px" width="150">
+                        <div class="lines">
+                            <p class="text-center my-1">Shoes</p>
+                            <p class="text-center my-1">Min <b>10%</b> off</p>
+                            <p class="text-center my-1"><b>Grab Now!</b></p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="img/Sandals.jpg" alt="" height="200px" width="150">
+                        <div class="lines">
+                            <p class="text-center my-1">Modern Sandals</p>
+                            <p class="text-center my-1">Min <b>20%</b> off</p>
+                            <p class="text-center my-1"><b>Grab Now!</b></p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="img/shoes 2.jpeg" alt="" height="200px" width="150">
+                        <div class="lines">
+                            <p class="text-center my-1">Shoes</p>
+                            <p class="text-center my-1">Min <b>20%</b> off</p>
+                            <p class="text-center my-1"><b>Grab Now!</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="flex-all-center">
+        <p>Copyright &copy; PM
+            version 5:3:4:2022
+        </p>
+    </footer>
+</body>
+
+</html>
